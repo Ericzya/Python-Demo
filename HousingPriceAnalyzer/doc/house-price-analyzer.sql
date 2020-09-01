@@ -18,8 +18,8 @@ SET FOREIGN_KEY_CHECKS=0;
 -- ----------------------------
 -- Table structure for houseprice
 -- ----------------------------
-DROP TABLE IF EXISTS `houseprice`;
-CREATE TABLE `houseprice` (
+DROP TABLE IF EXISTS `py_house_price`;
+CREATE TABLE `py_house_price` (
   `Id` int NOT NULL AUTO_INCREMENT,
   `HouseCity` varchar(255) COLLATE utf8_bin NOT NULL,
   `HouseArea` varchar(255) COLLATE utf8_bin NOT NULL,
