@@ -35,7 +35,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'HousingPriceAnalyzer.apps.HousingpriceanalyzerConfig',
+    'HousingPriceAnalyzer.apps.HousingPriceAnalyzerConfig',
 ]
 
 MIDDLEWARE = [
@@ -73,8 +73,12 @@ WSGI_APPLICATION = 'PythonDemo.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'house-price-analyzer',
+        'HOST': 'localhost',
+        'PORT': 3306,
+        'USER': 'root',
+        'PASSWORD': '112233'
     }
 }
 
