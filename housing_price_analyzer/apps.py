@@ -2,4 +2,4 @@ from django.apps import AppConfig
 
 
 class HousingPriceAnalyzerConfig(AppConfig):
-    name = 'HousingPriceAnalyzer'
+    name = 'housing_price_analyzer'
