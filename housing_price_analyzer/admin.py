@@ -1,3 +1,6 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import QueryStatistic, HousePrice
+
+admin.site.register(QueryStatistic)
+admin.site.register(HousePrice)
