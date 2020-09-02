@@ -44,5 +44,4 @@ class HousePrice(models.Model):
 
 class JsonEncoder(models.Model):
     def to_json(self):
-        print(str(self))
         return str(self)

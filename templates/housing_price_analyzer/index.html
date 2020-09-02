@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>下面是所有搜索结果：</p>
+{% if query_detail_list %}
+    <ul>
+        {% for query_detail in query_detail_list %}
+            <li><a href="/result/{{ query_detail.id }}/">{{ query_detail.house_community }}</a></li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>No information is available.</p>
+{% endif %}
+</body>
+</html>
