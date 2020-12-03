@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数据查询结果</title>
+</head>
+<body>
+<p>下面是房价搜索结果：</p>
+{% if house_price_info %}
+    <ul>
+            <li>
+                <a>{{ house_price_info.id }},{{ house_price_info.query_id }},{{ house_price_info.house_city }}</a>
+            </li>
+    </ul>
+{% else %}
+    <p>No information is available.</p>
+{% endif %}
+</body>
+</html>
