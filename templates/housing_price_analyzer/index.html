@@ -10,7 +10,7 @@
     <ul>
         {% for query_statistic_data in query_statistic_list %}
             <li>
-                <a href="/housing_price_analyzer/house_price_data/query_id={{ query_statistic_data.id }}/">{{ query_statistic_data.id }},{{ query_statistic_data.update_date }},{{ query_statistic_data.query_result }}</a>
+                <a href="/housing_price_analyzer/house_price_data/query_id={{ query_statistic_data.id }}/">搜索id:{{ query_statistic_data.id }},更新日期：{{ query_statistic_data.update_date }},搜索结果：{{ query_statistic_data.query_result }}</a>
             </li>
         {% endfor %}
     </ul>

@@ -7,8 +7,12 @@ from .models import HousePrice, QueryStatistic, JsonEncoder
 
 
 def house_price_data(request, query_id):
-    house_price_info = json.dumps(HousePrice.objects.filter(query_id=query_id), default=JsonEncoder.to_json)
-    return HttpResponse(house_price_info)
+    house_price_info = HousePrice.objects.filter(query_id=query_id)[0]
+    template = loader.get_template('housing_price_analyzer/query_data_detail.html')
+    context = {
+        'house_price_info': house_price_info,
+    }
+    return HttpResponse(template.render(context, request))
 
 
 def index(request):
