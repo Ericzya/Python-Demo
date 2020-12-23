@@ -18,6 +18,5 @@ from django.urls import include, path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('housing_price_analyzer/', include('housing_price_analyzer.urls')),
-    path('housing_price_crawler/', include('housing_price_crawler.urls'))
+    path('housing_price_analyzer/', include('housing_price_analyzer.urls'))
 ]
