@@ -1,9 +1,7 @@
-import json
-
 from django.http import HttpResponse
 from django.template import loader
 
-from .models import HousePrice, QueryStatistic, JsonEncoder
+from .models import HousePrice, QueryStatistic
 
 
 def house_price_data(request, query_id):
